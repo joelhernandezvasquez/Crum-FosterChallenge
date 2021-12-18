@@ -1,0 +1,37 @@
+:root {
+  --purple: #7d2eff;
+  --purple_accent: #7129e5;
+  --light_purple: #faf7ff;
+  --dark_grey: #343741;
+}
+
+#icon-paw-tag-2 path {
+  fill: var(--purple);
+}
+
+.header_title {
+  color: var(--purple);
+}
+
+.nav_link_container a {
+  color: var(--purple);
+}
+.add_pet_section {
+  background: var(--light_purple);
+}
+.text_content {
+  color: var(--dark_grey);
+}
+.main_heading_content {
+  color: var(--purple_accent);
+}
+.sub_heading_content {
+  color: var(--dark_grey);
+}
+.btn_add_pet {
+  background: var(--purple);
+  text-shadow: none;
+}
+.btn_add_pet:hover {
+  background: rgba(125, 46, 255, 0.85);
+}

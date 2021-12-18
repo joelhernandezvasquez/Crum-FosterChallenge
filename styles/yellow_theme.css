@@ -1,0 +1,38 @@
+:root {
+  --yellow: #ffd000;
+  --teal: #06748c;
+  --dark_grey: #343741;
+  --white: #ffffff;
+}
+
+#icon-paw-tag-2 path {
+  fill: var(--yellow);
+}
+
+.header_title {
+  color: var(--dark_grey);
+}
+
+.nav_link_container a {
+  color: var(--teal);
+}
+.add_pet_section {
+  background: var(--yellow);
+}
+.text_content {
+  color: var(--dark_grey);
+}
+.main_heading_content {
+  color: var(--dark_grey);
+}
+.sub_heading_content {
+  color: var(--dark_grey);
+}
+.btn_add_pet {
+  background: var(--white);
+  color: var(--dark_grey);
+  text-shadow: none;
+}
+.btn_add_pet:hover {
+  background: rgba(255, 255, 255, 0.95);
+}

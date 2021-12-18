@@ -1,55 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link href="styles/main.css" rel="stylesheet"/>
-    
-    <title>Code Challenge</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="styles/main.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" id="switcher-id" href="">
+  <title>Code Challenge</title>
 </head>
+
 <body>
-   <div class="wrapper">
-     <div class="container">
-         <div class="main_header">
-            <svg id="icon-paw-tag-2" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-                <rect id="boundaries" width="32" height="32" fill="none"/>
-                <g id="Layer_1" transform="translate(2.415 0)">
-                  <g id="Group_199" data-name="Group 199">
-                    <path id="Path_108" fill="" data-name="Path 108" d="M21.08,5.029c-.173-2.513-1.81-4.651-3.8-4.651-2.008,0-3.655,2.142-3.8,4.688A16.1,16.1,0,0,0,8.652,7.859c-15.8,12.932,6.867,36.814,20.129,16.868C33.144,18.166,28.649,7.715,21.08,5.029ZM8.785,17.876a1.9,1.9,0,1,1,3.152-2.047,2.249,2.249,0,0,1-.4,2.828A2.246,2.246,0,0,1,8.785,17.876ZM13.9,10.9a1.988,1.988,0,0,1,.4-.025,2.128,2.128,0,0,1,1.806,1.065,2.407,2.407,0,0,1,.314,1.037c.075,1.165-.574,2.586-1.724,2.775s-2.214-.95-2.518-2.077A2.172,2.172,0,0,1,13.9,10.9Zm2.97,16.7h-.007c-4.787,0-6.237-2.333-5.57-4.563.354-1.183,1.938-.938,2.033-2.467s1.529-2.161,3.537-2.161h.007c2.006,0,3.44.328,3.538,1.858s1.68,2,2.032,3.181C23.106,25.683,21.653,27.6,16.873,27.6Zm.543-14.754A2.319,2.319,0,0,1,17.7,11.9a2.127,2.127,0,0,1,1.728-1.112,2.149,2.149,0,0,1,.546.028,2.171,2.171,0,0,1,1.671,2.8c-.321,1.122-1.406,2.242-2.556,2.032S17.316,14.012,17.417,12.851Zm7.45,5.026a2.251,2.251,0,0,1-2.751.781,2.25,2.25,0,0,1-.405-2.828,1.9,1.9,0,1,1,3.156,2.047ZM15.109,4.613c.217-1.492,1.119-2.629,2.173-2.629s1.941.8,2.167,2.642h0a20.472,20.472,0,0,0-4.335.012C15.1,4.692,15.1,4.669,15.109,4.613Z" transform="translate(-3.26 -0.378)"/>
-                  </g>
-                </g>
-              </svg>
-             <h1 class="header_title">Add a Pet</h1>
-         </div>
+  <div class="wrapper">
+    <div class="container">
+      <div class="main_header">
+        <svg id="icon-paw-tag-2" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+          <rect id="boundaries" width="32" height="32" fill="none" />
+          <g id="Layer_1" transform="translate(2.415 0)">
+            <g id="Group_199" data-name="Group 199">
+              <path id="Path_108" fill="" data-name="Path 108"
+                d="M21.08,5.029c-.173-2.513-1.81-4.651-3.8-4.651-2.008,0-3.655,2.142-3.8,4.688A16.1,16.1,0,0,0,8.652,7.859c-15.8,12.932,6.867,36.814,20.129,16.868C33.144,18.166,28.649,7.715,21.08,5.029ZM8.785,17.876a1.9,1.9,0,1,1,3.152-2.047,2.249,2.249,0,0,1-.4,2.828A2.246,2.246,0,0,1,8.785,17.876ZM13.9,10.9a1.988,1.988,0,0,1,.4-.025,2.128,2.128,0,0,1,1.806,1.065,2.407,2.407,0,0,1,.314,1.037c.075,1.165-.574,2.586-1.724,2.775s-2.214-.95-2.518-2.077A2.172,2.172,0,0,1,13.9,10.9Zm2.97,16.7h-.007c-4.787,0-6.237-2.333-5.57-4.563.354-1.183,1.938-.938,2.033-2.467s1.529-2.161,3.537-2.161h.007c2.006,0,3.44.328,3.538,1.858s1.68,2,2.032,3.181C23.106,25.683,21.653,27.6,16.873,27.6Zm.543-14.754A2.319,2.319,0,0,1,17.7,11.9a2.127,2.127,0,0,1,1.728-1.112,2.149,2.149,0,0,1,.546.028,2.171,2.171,0,0,1,1.671,2.8c-.321,1.122-1.406,2.242-2.556,2.032S17.316,14.012,17.417,12.851Zm7.45,5.026a2.251,2.251,0,0,1-2.751.781,2.25,2.25,0,0,1-.405-2.828,1.9,1.9,0,1,1,3.156,2.047ZM15.109,4.613c.217-1.492,1.119-2.629,2.173-2.629s1.941.8,2.167,2.642h0a20.472,20.472,0,0,0-4.335.012C15.1,4.692,15.1,4.669,15.109,4.613Z"
+                transform="translate(-3.26 -0.378)" />
+            </g>
+          </g>
+        </svg>
+        <h1 class="header_title">Add a Pet</h1>
+      </div>
 
-         <div class="nav_link_container">
-             <a href="#">View My Pets</a>
-         </div>
+      <div class="nav_link_container">
+        <a href="#">View My Pets</a>
+      </div>
 
-         <div class="add_pet_section">
-             <div class="add_pet_content">
-              
-              <div class="add_pet_content_left_col content_container">
-                <h3 class="text_content">Did you just get a new furry friend?</h2>
-                <h1 class="main_heading_content">Add a Pet</h1>
-                <h2 class="sub_heading_content">to your coverage today!</h2>
-               </div>
+      <div class="add_pet_section">
+        <div class="add_pet_content">
 
-               <div class="add_pet_content_righ_col">
-                 <img src="https://d3544la1u8djza.cloudfront.net/Portal/Dog+Photos/dog-golden.png" alt="dog image"/>
-              </div>
-           
-             </div>
-             <div class="container_btn_add_pet ">
-             <button class="btn_add_pet">Add a Pet</button>
-             </div>
-           
-         </div>
-     </div>
-   </div> 
+          <div class="add_pet_content_left_col content_container">
+            <h3 class="text_content">Did you just get a new furry friend?</h2>
+              <h1 class="main_heading_content">Add a Pet</h1>
+              <h2 class="sub_heading_content">to your coverage today!</h2>
+          </div>
+
+          <div class="add_pet_content_righ_col">
+            <img src="https://d3544la1u8djza.cloudfront.net/Portal/Dog+Photos/dog-golden.png" alt="dog image" />
+          </div>
+
+        </div>
+        <div class="container_btn_add_pet ">
+          <button class="btn_add_pet">Add a Pet</button>
+        </div>
+
+      </div>
+    </div>
+    <div class="select_theme_modal">
+      <div class="modal_content">
+        <i id="close_icon" class="fa fa-times close_icon" aria-hidden="true"></i>
+        <h2>Please Select A Brand Theme</h2>
+        <div class="brand_card_container">
+          <div class="brand_card orange_brand" data-theme="orange"></div>
+          <div class="brand_card purple_brand" data-theme="purple"></div>
+          <div class="brand_card yellow_brand" data-theme="yellow"></div>
+        </div>
+      </div>
+    
+    </div>
+  </div>
+
+  <script src="index.js"></script>
 </body>
+
 </html>
